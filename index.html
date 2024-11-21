@@ -40,22 +40,25 @@
                     <li>Artificial Intelligence 3: Deep Learning and Autonomous Decision Making</li>
                     <li>Cognitive perspectives on human-technology interaction</li>
                     <li>Interaction Design and AI</li>
+                    <li>Big Data analytics and the future of decision making</li>
                 </ul>
             </div>
             <div class="column">
                 <ul>
-                    <li>Big Data analytics and the future of decision making</li>
                     <li>Spin Training, Aerobatics</li>
                     <li>Memory</li>
                     <li>Social Cognition</li>
+                    <li>Introduction to Programming</li>
+                    <li>Intermediate Programming</li>
                 </ul>
             </div>
             <div class="column">
                 <ul>
-                    <li>Introduction to Programming</li>
                     <li>Deep Learning and Autonomous Decision Making</li>
                     <li>Cognitive Psychology</li>
                     <li>Bachelor's thesis in Cognitive Science</li>
+                    <li>Problems and Theories in Cognitive Science</li>
+                    <li>Cognitive Neuroscience</li>
                 </ul>
             </div>
         </div>
@@ -66,6 +69,8 @@
             <li>Bogserpilot at Göteborgs segelflygklubb (Feb 2013–Present)</li>
             <li>Spaningspilot, Brandflyg at Frivilliga Flygkåren (Jan 2013–Present)</li>
             <li>Load Control/Dispatch/Turn-Around Coordinator at Menzies Aviation (Jun 2012–Mar 2021)</li>
+            <li>Assembly at Volvo Car Corporation (Sep 2007–Jul 2008)</li>
+            <li>Parcel Delivery at Poståkeriet Sverige AB (May 2007–Sep 2007)</li>
         </ul>
     </section>
     <section id="portfolio">
@@ -73,19 +78,19 @@
         <h3>Essays</h3>
         <ul>
             <li>
-                <a href="#" onclick="toggleSummary('summary1')">AI Ethics Policy Compliance Tool</a>
+                <a href="#" onclick="toggleSummary(event, 'summary1')">AI Ethics Policy Compliance Tool</a>
                 <div id="summary1" class="summary-box">
                     <p>Summary: This document proposes a compliance tool for AI ethics, focusing on tracking adherence to internal and external guidelines while identifying ethics washing and providing actionable recommendations for improvement.</p>
                     <a href="files/AI_Ethics.pdf" target="_blank">Download Full PDF</a>
-                    <button onclick="toggleSummary('summary1')">Close Preview</button>
+                    <button onclick="toggleSummary(event, 'summary1')">Close Preview</button>
                 </div>
             </li>
             <li>
-                <a href="#" onclick="toggleSummary('summary2')">The Effect of Brainwave Entrainment</a>
+                <a href="#" onclick="toggleSummary(event, 'summary2')">The Effect of Brainwave Entrainment</a>
                 <div id="summary2" class="summary-box">
                     <p>Summary: This study investigates the impact of brainwave entrainment (BWE) on cognitive performance, exploring its effects on tasks measuring creativity and attention, and evaluating placebo influences.</p>
                     <a href="files/Brainwave_Study.pdf" target="_blank">Download Full PDF</a>
-                    <button onclick="toggleSummary('summary2')">Close Preview</button>
+                    <button onclick="toggleSummary(event, 'summary2')">Close Preview</button>
                 </div>
             </li>
         </ul>
@@ -110,7 +115,8 @@
         <p>&copy; 2024 Magnus Wahlström. All Rights Reserved.</p>
     </footer>
     <script>
-        function toggleSummary(id) {
+        function toggleSummary(event, id) {
+            event.preventDefault(); // Prevent scrolling to the top
             const summary = document.getElementById(id);
             if (summary.style.display === "block") {
                 summary.style.display = "none";
