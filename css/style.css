@@ -1,30 +1,49 @@
 /* General Body Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
+    line-height: 1.8; /* Improved readability */
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: #f8f9fa; /* Light gray */
     color: #333;
 }
 
 /* Header Section */
 header {
-    background: #007BFF;
+    background: #003f91; /* Deep Blue */
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    position: relative;
 }
 
-/* Navigation Bar */
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-top: 10px;
+    color: #ff7f50; /* Bright Orange Accent */
+}
+
+/* Sticky Navigation Bar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #003f91;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 nav ul {
-    background: #333;
-    color: #fff;
-    list-style: none;
-    padding: 0;
     display: flex;
     justify-content: center;
-    margin: 0; /* Removes default margin */
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
 }
 
 nav ul li {
@@ -34,7 +53,11 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold; /* Highlights links */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff7f50; /* Accent color */
 }
 
 /* Section Styles */
@@ -43,75 +66,70 @@ section {
     margin: 20px;
     background: #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* About Me Section */
+#about {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#about img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #003f91;
+}
+
+#about p {
+    margin: 0;
+}
+
+/* CV Section */
+.cv-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cv-item button {
+    padding: 10px 20px;
+    background-color: #003f91;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cv-item button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Courses Section */
+.course-group {
+    margin-bottom: 20px;
+}
+
+.course-group h3 {
+    font-size: 1.2em;
+    color: #003f91;
+}
+
+.course-group ul {
+    margin: 0;
+    padding-left: 20px;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #333;
+    background: #003f91;
     color: #fff;
-}
-
-/* Courses Section */
-.course-columns {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px; /* Adds space between columns */
-    margin-top: 20px; /* Adds spacing from the heading */
-}
-
-.course-columns .column {
-    flex: 1;
-    list-style: none;
-    padding: 10px;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-}
-
-/* Summary Boxes */
-.summary-box {
-    display: none; /* Hidden by default */
-    padding: 10px;
-    margin-top: 10px;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
-}
-
-.summary-box p {
-    margin: 0 0 10px;
-}
-
-.summary-box a, 
-.summary-box button {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 8px 15px;
-    color: #fff;
-    background: #007BFF;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.summary-box button:hover, 
-.summary-box a:hover {
-    background: #0056b3; /* Slightly darker blue on hover */
-}
-
-/* Additions for Consistency */
-a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
