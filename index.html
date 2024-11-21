@@ -15,6 +15,7 @@
     <nav>
         <ul>
             <li><a href="#about">About Me</a></li>
+            <li><a href="#cv">My CV</a></li>
             <li><a href="#courses">Courses</a></li>
             <li><a href="#qualifications">Professional Qualifications</a></li>
             <li><a href="#history">Work History</a></li>
@@ -33,6 +34,7 @@
                     <li>Ethical AI consulting</li>
                     <li>Cognitive science applications in technology and aviation</li>
                 </ul>
+                <p>I am actively seeking opportunities to leverage my multidisciplinary background and passion for innovation in both academic and applied settings.</p>
             </div>
         </div>
     </section>
@@ -54,12 +56,15 @@
     </section>
     <section id="courses">
         <h2>Courses Taken</h2>
+        <p>The following courses reflect my commitment to continuous learning in both technology and aviation. They demonstrate a solid foundation in AI, cognitive science, and specialized aviation training.</p>
         <div class="course-group">
             <h3>AI & Machine Learning</h3>
             <ul>
                 <li>Artificial Intelligence 2: Machine Learning and Data Analysis</li>
                 <li>Artificial Intelligence 3: Deep Learning and Autonomous Decision Making</li>
                 <li>Big Data analytics and the future of decision making</li>
+                <li>Introduction to Programming</li>
+                <li>Intermediate Programming</li>
             </ul>
         </div>
         <div class="course-group">
@@ -69,6 +74,8 @@
                 <li>Social Cognition</li>
                 <li>Problems and Theories in Cognitive Science</li>
                 <li>Memory</li>
+                <li>Cognitive Psychology</li>
+                <li>Cognitive Linguistics</li>
             </ul>
         </div>
         <div class="course-group">
@@ -78,6 +85,7 @@
                 <li>Spin Training, Aerobatics</li>
                 <li>Under Water Escape</li>
                 <li>Low Flight Qualification (to 50ft)</li>
+                <li>Tactical Flying/Target Surveillance</li>
             </ul>
         </div>
     </section>
@@ -127,6 +135,58 @@
             </li>
         </ul>
     </section>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <h3>Essays</h3>
+        <ul>
+            <li>
+                <a href="#" onclick="toggleSummary(event, 'summary1')">AI Ethics Policy Compliance Tool</a>
+                <div id="summary1" class="summary-box">
+                    <p>Summary: {summary_1}</p>
+                    <a href="files/AI_Ethics.pdf" target="_blank">Download Full PDF</a>
+                    <button onclick="toggleSummary(event, 'summary1')">Close Preview</button>
+                </div>
+            </li>
+            <li>
+                <a href="#" onclick="toggleSummary(event, 'summary2')">The Effect of Brainwave Entrainment</a>
+                <div id="summary2" class="summary-box">
+                    <p>Summary: {summary_2}</p>
+                    <a href="files/Brainwave_Study.pdf" target="_blank">Download Full PDF</a>
+                    <button onclick="toggleSummary(event, 'summary2')">Close Preview</button>
+                </div>
+            </li>
+        </ul>
+        <h3>Projects</h3>
+        <ul>
+            <li>
+                <a href="#" onclick="toggleSummary(event, 'summaryAthena')">Athena disinformation detecting app</a>
+                <div id="summaryAthena" class="summary-box">
+                    <p>Summary: {athena_summary}</p>
+                    <a href="https://github.com/malstrom82/AthenaProject" target="_blank">View on GitHub</a>
+                    <button onclick="toggleSummary(event, 'summaryAthena')">Close Preview</button>
+                </div>
+            </li>
+        </ul>
+        <h3>Other</h3>
+        <ul>
+            <li>
+                <a href="#" onclick="toggleSummary(event, 'summarySong')">Sample Song</a>
+                <div id="summarySong" class="summary-box">
+                    <p>Summary: {song_summary}</p>
+                    <a href="#">Download MP3</a>
+                    <button onclick="toggleSummary(event, 'summarySong')">Close Preview</button>
+                </div>
+            </li>
+            <li>
+                <a href="#" onclick="toggleSummary(event, 'summaryVideo')">Edited Video</a>
+                <div id="summaryVideo" class="summary-box">
+                    <p>Summary: {video_summary}</p>
+                    <a href="#">Download MP4</a>
+                    <button onclick="toggleSummary(event, 'summaryVideo')">Close Preview</button>
+                </div>
+            </li>
+        </ul>
+    </section>
     <section id="contact">
         <h2>Contact Me</h2>
         <p>If you’d like to connect, feel free to reach out via email, phone, or LinkedIn.</p>
@@ -140,5 +200,16 @@
     <footer>
         <p>&copy; 2024 Magnus Wahlström. All Rights Reserved.</p>
     </footer>
+    <script>
+        function toggleSummary(event, id) {
+            event.preventDefault();
+            const summary = document.getElementById(id);
+            if (summary.style.display === "block") {
+                summary.style.display = "none";
+            } else {
+                summary.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
