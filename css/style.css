@@ -95,28 +95,28 @@ section h2 {
 #about {
     display: flex;
     flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center-align the image and header */
-    text-align: left; /* Left-align the text content below the header */
+    align-items: center; /* Center-aligns the image only */
     gap: 15px; /* Add space between elements */
 }
 
 #about img {
     width: 90px; /* Adjusted size */
-    height: 90px;
-    border-radius: 50%; /* Circular image */
-    border: 2px solid #003f91; /* Deep Blue border */
+    height: auto; /* Maintain aspect ratio */
     margin-bottom: 10px; /* Add spacing below the image */
 }
 
 #about h2 {
     margin: 0;
-    text-align: center; /* Ensure the header is centered */
+    text-align: left; /* Ensure header is left-aligned */
+    width: 100%; /* Use full width of container */
 }
 
 #about p, #about ul {
     margin: 0;
-    width: 100%; /* Ensures text takes up full width */
+    text-align: left; /* Left-align text content */
+    width: 100%; /* Use full width of container */
 }
+
 
 /* CV Section */
 .cv-container {
