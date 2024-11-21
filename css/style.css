@@ -94,15 +94,18 @@ section h2 {
 /* About Me Section */
 #about {
     display: flex;
-    align-items: center; /* Keeps the text aligned with the smaller image */
-    gap: 15px; /* Adjusted spacing */
+    flex-direction: column; /* Stack the image and text vertically */
+    align-items: center; /* Center-align content horizontally */
+    text-align: center; /* Center-align text */
+    gap: 15px; /* Adjust spacing between image and text */
 }
 
 #about img {
-    width: 90px;
+    width: 90px; /* Reduced size */
     height: 90px;
     border-radius: 50%; /* Circular image */
     border: 2px solid #003f91; /* Deep Blue border */
+    margin-bottom: 10px; /* Optional spacing below the image */
 }
 
 #about p, #about ul {
