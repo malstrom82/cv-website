@@ -1,16 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional CV - Magnus Wahlström</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Professional CV</h1>
-        <p>Showcasing my expertise in AI and Aviation</p>
+        <h1>Magnus Wahlström</h1>
+        <h2>AI Specialist | Cognitive Scientist | Certified Pilot</h2>
     </header>
     <nav>
         <ul>
@@ -24,12 +24,17 @@
     </nav>
     <section id="about">
         <h2>About Me</h2>
-        <p>
-            I have a Bachelor’s degree in Cognitive Science and a Master’s in Human-Centered AI, earned through rigorous studies at Gothenburg University and UPF Barcelona. In addition, I am a certified professional pilot under European regulations, with training completed in both Sweden and the United States.
-        </p>
-        <p>
-            My expertise spans interaction design, ethical consulting, and advanced AI applications, where I aim to bridge human-centric innovation with cutting-edge technology. I am currently seeking opportunities to leverage my multidisciplinary background in these domains.
-        </p>
+        <div class="about-content">
+            <img src="images/profile.jpg" alt="Magnus Wahlström">
+            <div>
+                <p>With a Master’s in Human-Centered AI and certifications in aviation, I bridge technology and human cognition. My areas of expertise include:</p>
+                <ul>
+                    <li>AI-driven interaction design</li>
+                    <li>Ethical AI consulting</li>
+                    <li>Cognitive science applications in technology and aviation</li>
+                </ul>
+            </div>
+        </div>
     </section>
     <section id="cv">
         <h2>My CV</h2>
@@ -49,56 +54,40 @@
     </section>
     <section id="courses">
         <h2>Courses Taken</h2>
-        <p>The following courses reflect my commitment to continuous learning in both technology and aviation. They demonstrate a solid foundation in AI, cognitive science, and specialized aviation training.</p>
-        <div class="course-columns">
-            <div class="column">
-                <ul>
-                    <li>Artificial Intelligence 2: Machine Learning and Data Analysis</li>
-                    <li>Artificial Intelligence 3: Deep Learning and Autonomous Decision Making</li>
-                    <li>Cognitive perspectives on human-technology interaction</li>
-                    <li>Interaction Design and AI</li>
-                    <li>Aerial SAR/Search And Rescue</li>
-                    <li>Big Data analytics and the future of decision making</li>
-                    <li>Spin Training, Aerobatics</li>
-                    <li>Memory</li>
-                </ul>
-            </div>
-            <div class="column">
-                <ul>
-                    <li>Social Cognition</li>
-                    <li>Scientific Method 1 and 2</li>
-                    <li>Evolutionary Psychology</li>
-                    <li>Introduction to Programming</li>
-                    <li>Intermediate Programming</li>
-                    <li>Deep Learning and Autonomous Decision Making</li>
-                    <li>Cognitive Psychology</li>
-                    <li>Cognitive Linguistics</li>
-                </ul>
-            </div>
-            <div class="column">
-                <ul>
-                    <li>Artificial intelligence and human cognition</li>
-                    <li>Problems and Theories in Cognitive Science</li>
-                    <li>Bachelor's thesis in Cognitive Science</li>
-                    <li>Cognitive Neuroscience</li>
-                    <li>First Aid</li>
-                    <li>Under Water Escape</li>
-                    <li>Low Flight Qualification (to 50ft)</li>
-                    <li>Tactical Flying/Target Surveillance</li>
-                    <li>The Cognition of Influence in the Digital Society</li>
-                </ul>
-            </div>
+        <div class="course-group">
+            <h3>AI & Machine Learning</h3>
+            <ul>
+                <li>Artificial Intelligence 2: Machine Learning and Data Analysis</li>
+                <li>Artificial Intelligence 3: Deep Learning and Autonomous Decision Making</li>
+                <li>Big Data analytics and the future of decision making</li>
+            </ul>
+        </div>
+        <div class="course-group">
+            <h3>Cognitive Science</h3>
+            <ul>
+                <li>Cognitive perspectives on human-technology interaction</li>
+                <li>Social Cognition</li>
+                <li>Problems and Theories in Cognitive Science</li>
+                <li>Memory</li>
+            </ul>
+        </div>
+        <div class="course-group">
+            <h3>Aviation Training</h3>
+            <ul>
+                <li>Aerial SAR/Search And Rescue</li>
+                <li>Spin Training, Aerobatics</li>
+                <li>Under Water Escape</li>
+                <li>Low Flight Qualification (to 50ft)</li>
+            </ul>
         </div>
     </section>
     <section id="qualifications">
         <h2>Professional Qualifications</h2>
-    
         <h3>Academic Credentials</h3>
         <ul>
             <li>Bachelor’s Degree in Cognitive Science</li>
             <li>Master’s Degree in Human-Centered AI</li>
         </ul>
-    
         <h3>Pilot Certifications</h3>
         <ul>
             <li>CPL(A) – Commercial Pilot License</li>
@@ -138,58 +127,6 @@
             </li>
         </ul>
     </section>
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <h3>Essays</h3>
-        <ul>
-            <li>
-                <a href="#" onclick="toggleSummary(event, 'summary1')">AI Ethics Policy Compliance Tool</a>
-                <div id="summary1" class="summary-box">
-                    <p>Summary: {summary_1}</p>
-                    <a href="files/AI_Ethics.pdf" target="_blank">Download Full PDF</a>
-                    <button onclick="toggleSummary(event, 'summary1')">Close Preview</button>
-                </div>
-            </li>
-            <li>
-                <a href="#" onclick="toggleSummary(event, 'summary2')">The Effect of Brainwave Entrainment</a>
-                <div id="summary2" class="summary-box">
-                    <p>Summary: {summary_2}</p>
-                    <a href="files/Brainwave_Study.pdf" target="_blank">Download Full PDF</a>
-                    <button onclick="toggleSummary(event, 'summary2')">Close Preview</button>
-                </div>
-            </li>
-        </ul>
-        <h3>Projects</h3>
-        <ul>
-            <li>
-                <a href="#" onclick="toggleSummary(event, 'summaryAthena')">Athena disinformation detecting appApp</a>
-                <div id="summaryAthena" class="summary-box">
-                    <p>Summary: {athena_summary}</p>
-                    <a href="https://github.com/yourusername/AthenaProject" target="_blank">View on GitHub</a>
-                    <button onclick="toggleSummary(event, 'summaryAthena')">Close Preview</button>
-                </div>
-            </li>
-        </ul>
-        <h3>Other</h3>
-        <ul>
-            <li>
-                <a href="#" onclick="toggleSummary(event, 'summarySong')">Sample Song</a>
-                <div id="summarySong" class="summary-box">
-                    <p>Summary: {song_summary}</p>
-                    <a href="#">Download MP3</a>
-                    <button onclick="toggleSummary(event, 'summarySong')">Close Preview</button>
-                </div>
-            </li>
-            <li>
-                <a href="#" onclick="toggleSummary(event, 'summaryVideo')">Edited Video</a>
-                <div id="summaryVideo" class="summary-box">
-                    <p>Summary: {video_summary}</p>
-                    <a href="#">Download MP4</a>
-                    <button onclick="toggleSummary(event, 'summaryVideo')">Close Preview</button>
-                </div>
-            </li>
-        </ul>
-    </section>
     <section id="contact">
         <h2>Contact Me</h2>
         <p>If you’d like to connect, feel free to reach out via email, phone, or LinkedIn.</p>
@@ -201,19 +138,7 @@
         </ul>
     </section>
     <footer>
-        <img src="images/profile.jpg" alt="Magnus Wahlström" class="profile-image-small">
         <p>&copy; 2024 Magnus Wahlström. All Rights Reserved.</p>
     </footer>
-    <script>
-        function toggleSummary(event, id) {{
-            event.preventDefault(); // Prevent scrolling to the top
-            const summary = document.getElementById(id);
-            if (summary.style.display === "block") {{
-                summary.style.display = "none";
-            }} else {{
-                summary.style.display = "block";
-            }}
-        }}
-    </script>
 </body>
 </html>
