@@ -40,25 +40,18 @@ footer {
     background: #333;
     color: #fff;
 }
-.profile-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: block;
-    margin: 10px auto;
+.summary-box {
+    display: none; /* Hidden by default */
+    padding: 10px;
+    margin-top: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
-.profile-image-small {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: block;
-    margin: 10px auto;
+.summary-box p {
+    margin: 0 0 10px;
 }
-.course-columns {
-    display: flex;
-    justify-content: space-between;
-}
-.course-columns .column {
-    flex: 1;
-    margin: 0 10px;
+.summary-box a, .summary-box button {
+    display: inline-block;
+    margin-right: 10px;
 }

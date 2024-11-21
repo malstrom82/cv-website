@@ -16,108 +16,49 @@
         <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="#qualifications">Qualifications</a></li>
-            <li><a href="#work">Work Experience</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I hold a Bachelor's degree in Cognitive Science and a Master's in Human-Centered AI, with studies at Gothenburg University and UPF Barcelona.
-            I am also a professional pilot, certified under European regulations, with education completed in Sweden and the US.
-        </p>
-        <p>
-            My areas of expertise include interaction design, ethical consultancy, and AI-related work, and I am actively looking for opportunities in these fields.
-        </p>
-    </section>
     <section id="portfolio">
         <h2>Portfolio</h2>
-        <p>Here are some of my past projects:</p>
+        <p>Here are some of my works:</p>
         <ul>
-            <li><a href="#">Project 1: AI Application</a></li>
-            <li><a href="#">Project 2: Ethical Design Essay</a></li>
-            <li><a href="#">Project 3: Aviation Safety Analysis</a></li>
-        </ul>
-    </section>
-    <section id="courses">
-        <h2>Courses Taken</h2>
-        <div class="course-columns">
-            <div class="column">
-                <ul>
-                    <li>Artificial Intelligence 2: Machine Learning and Data Analysis</li>
-                    <li>Artificial Intelligence 3: Deep Learning and Autonomous Decision Making</li>
-                    <li>Cognitive perspectives on human-technology interaction</li>
-                    <li>Interaction Design and AI</li>
-                    <li>Aerial SAR/Search And Rescue</li>
-                    <li>Big Data analytics and the future of decision making</li>
-                    <li>Introduction to Human-Centered AI</li>
-                    <li>Spin Training, Aerobatics</li>
-                    <li>Memory</li>
-                </ul>
-            </div>
-            <div class="column">
-                <ul>
-                    <li>Social Cognition</li>
-                    <li>Scientific Method 1 and 2</li>
-                    <li>Evolutionary Psychology</li>
-                    <li>Introduction to Programming</li>
-                    <li>Intermediate Programming</li>
-                    <li>Deep Learning and Autonomous Decision Making</li>
-                    <li>Cognitive Psychology</li>
-                    <li>Cognitive Linguistics</li>
-                    <li>Artificial intelligence and human cognition</li>
-                </ul>
-            </div>
-            <div class="column">
-                <ul>
-                    <li>Problems and Theories in Cognitive Science</li>
-                    <li>Bachelor's thesis in Cognitive Science</li>
-                    <li>Cognitive Neuroscience</li>
-                    <li>First Aid</li>
-                    <li>Under Water Escape</li>
-                    <li>Low Flight Qualification (to 50ft)</li>
-                    <li>Tactical Flying/Target Surveillance</li>
-                    <li>The Cognition of Influence in the Digital Society</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section id="qualifications">
-        <h2>Professional Qualifications</h2>
-        <p>CPL(A) Commercial Pilot License</p>
-        <ul>
-            <li>Instrument Rating (Multi Engine)</li>
-            <li>ATPL (Frozen) with 94% average</li>
-            <li>MCC (B737-300)</li>
-            <li>Radiotelephony grade 6/6</li>
-            <li>Medical Class 1</li>
-        </ul>
-        <p>Bachelor's degree in Cognitive Science</p>
-        <p>Master's degree in Human-Centered AI</p>
-    </section>
-    <section id="work">
-        <h2>Work Experience</h2>
-        <ul>
-            <li>Bogserpilot at Göteborgs segelflygklubb (Feb 2013–Present)</li>
-            <li>Spaningspilot, Brandflyg at Frivilliga Flygkåren (Jan 2013–Present)</li>
-            <li>Load Control/Dispatch/Turn-Around Coordinator at Menzies Aviation (Jun 2012–Mar 2021)</li>
-            <li>Assembly at Volvo Car Corporation (Sep 2007–Jul 2008)</li>
-            <li>Parcel Delivery at Poståkeriet Sverige AB (May 2007–Sep 2007)</li>
-            <li>Insolation at Norisol A/S (Apr 2002–Feb 2005)</li>
+            <li>
+                <a href="#" onclick="toggleSummary('summary1')">AI Ethics Policy Compliance Tool</a>
+                <div id="summary1" class="summary-box">
+                    <p>Summary: This document proposes a compliance tool for AI ethics, focusing on tracking adherence to internal and external guidelines while identifying ethics washing and providing actionable recommendations for improvement.</p>
+                    <a href="files/AI_Ethics.pdf" target="_blank">Download Full PDF</a>
+                    <button onclick="toggleSummary('summary1')">Close</button>
+                </div>
+            </li>
+            <li>
+                <a href="#" onclick="toggleSummary('summary2')">The Effect of Brainwave Entrainment</a>
+                <div id="summary2" class="summary-box">
+                    <p>Summary: This study investigates the impact of brainwave entrainment (BWE) on cognitive performance, exploring its effects on tasks measuring creativity and attention, and evaluating placebo influences.</p>
+                    <a href="files/Brainwave_Study.pdf" target="_blank">Download Full PDF</a>
+                    <button onclick="toggleSummary('summary2')">Close</button>
+                </div>
+            </li>
         </ul>
     </section>
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:wahlstrom.magnus.r@gmail.com">wahlstrom.magnus.r@gmail.com</a></p>
-        <p>Phone: +46 (0)736129954
+        <p>Email: <a href="mailto:magnus@magnus.com">magnus@magnus.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/magnus-wahlstr%C3%B6m-r/">Magnus Wahlström</a></p>
-        <p>GitHub: <a href="https://github.com/malstrom82/">Malstrom82</a></p>
+        <p>GitHub: <a href="#">Your GitHub Profile</a></p>
     </section>
     <footer>
-        <img src="images/profile.jpg" alt="Magnus Wahlström" class="profile-image-small">
         <p>&copy; 2024 Magnus Wahlström. All Rights Reserved.</p>
     </footer>
+    <script>
+        function toggleSummary(id) {
+            const summary = document.getElementById(id);
+            if (summary.style.display === "block") {
+                summary.style.display = "none";
+            } else {
+                summary.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
