@@ -40,6 +40,19 @@ footer {
     background: #333;
     color: #fff;
 }
+.course-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between columns */
+}
+.course-columns .column {
+    flex: 1;
+    list-style: none;
+    padding: 10px;
+    background: #f9f9f9; /* Optional: Adds a light background to each column */
+    border: 1px solid #ddd; /* Optional: Adds a border to each column */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
 .summary-box {
     display: none; /* Hidden by default */
     padding: 10px;
